@@ -1,0 +1,2059 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Barber Point</title>
+  <link rel="preload" href="fonts/inter-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/inter-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/inter-900.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/inter-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/raleway-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/raleway-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/raleway-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1?apikey=e2124c4a-fc89-4536-9b83-421c5b7a020a&lang=ru_RU"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container header__container">
+    <a class="header__logo-wrapper">
+      <img loading="lazy" src="img/logo.svg" class="image" width="215" height="44" alt="Логотип Barber Point">
+    </a>
+    <nav class="header__nav nav">
+      <ul class="nav__list list-reset">
+        <li class="nav__item">
+          <a href="#" class="nav__link eff-line">Статьи и новости</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link eff-line">Школа барберов</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__desc">
+      <address class="header__address">г. Краснодар</address>
+      <div class="header__time">Ежедневно 10:00–22:00</div>
+    </div>
+    <div class="header__btn-wrapper">
+      <button class="header__btn main-btn main-btn--black btn-reset" aria-label="Whatsapp" data-graph-path="modal-phone">
+        <svg class="icon">
+          <use xlink:href="img/sprite.svg#whatsapp"></use>
+        </svg>
+      </button>
+      <a class="header__tel main-btn main-btn--black" href="tel:+78612050845">
+        <svg class="icon">
+          <use xlink:href="img/sprite.svg#phone"></use>
+        </svg>
+        8 (861) 205-08-45
+      </a>
+    </div>
+    <div class="header__mob-wrapper">
+      <button class="header__mob-btn btn-reset" aria-label="Whatsapp" data-graph-path="modal-phone">
+        <svg>
+          <use xlink:href="img/sprite.svg#phone"></use>
+        </svg>
+      </button>
+      <button class="burger" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+    <div class="mob-menu" data-menu>
+      <div class="mob-menu__overlay" data-menu-overlay></div>
+      <div class="mob-menu__content">
+        <div class="mob-menu__logo-wrapper">
+          <img loading="lazy" src="img/logo.svg" class="image" width="158" height="32" alt="Логотип Barber Point">
+        </div>
+        <div class="mob-menu__clock">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_252_116926)">
+              <path d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M9 4.5V9L12 10.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_252_116926">
+                <rect width="18" height="18" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+          <span>Ежедневно 10:00–22:00</span>
+        </div>
+        <nav class="mob-menu__nav">
+          <ul class="mob-menu__nav-list list-reset">
+            <li class="mob-menu__nav-item">
+              <a href="#" class="mob-menu__nav-link">
+                <span class="mob-menu__nav-text">Школа барберов</span>
+                <svg class="mob-menu__nav-icon">
+                  <use xlink:href="img/sprite.svg#arrow-sg-accordion"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-menu__nav-item">
+              <a href="#" class="mob-menu__nav-link">
+                <span class="mob-menu__nav-text">Статьи и новости</span>
+                <svg class="mob-menu__nav-icon">
+                  <use xlink:href="img/sprite.svg#arrow-sg-accordion"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button class="mob-menu__tel btn-reset main-btn main-btn--color" data-menu-item>
+          Услуги и цены
+        </button>
+        <div class="mob-menu__city">г. Краснодар</div>
+        <ul class="mob-menu__city-list list-reset">
+          <li class="mob-menu__city-item">ул. Артюшкова 1.</li>
+          <li class="mob-menu__city-item">ул. 40 Лет Победы 97.</li>
+          <li class="mob-menu__city-item">ул. Петра Метальникова 7.</li>
+          <li class="mob-menu__city-item">ул. Адм. Серебрякова 3к1.</li>
+          <li class="mob-menu__city-item">ул. Гидростроителей 62к2.</li>
+        </ul>
+        <ul class="mob-menu__social-list social-networks list-reset">
+          <li class="social-networks__item">
+            <a href="vk.com" class="social-networks__link social-networks__link--vk" data-menu-item aria-label="VK">
+              <svg class="icon">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-networks__item">
+            <a href="telegram.com" class="social-networks__link social-networks__link--telegram" data-menu-item aria-label="Telegram">
+              <svg class="icon">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-networks__item">
+            <button href="whatsapp.com" class=" btn-reset social-networks__link social-networks__link--whatsapp" data-menu-item aria-label="Whatsapp" data-graph-path="modal-phone">
+              <svg class="icon">
+                <use xlink:href="img/sprite.svg#whatsapp"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="social-networks__item">
+            <a href="youtube.com" class="social-networks__link social-networks__link--youtube" data-menu-item aria-label="Youtube">
+              <svg class="icon">
+                <use xlink:href="img/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main class="main">
+      <section class="hero">
+  <div class="container hero__container">
+    <div class="hero__wrapper">
+      <h1 class="hero__title main-title main-title--white main-title--main">Стрижки<br> с гарантией</h1>
+      <p class="hero__offer main-desc main-desc--white">Не понравилось — вернем деньги!</p>
+      <button class="hero__btn btn-reset main-btn main-btn--color">Записаться онлайн</button>
+    </div>
+  </div>
+</section>
+
+      <section class="simply">
+  <div class="container simply__container">
+    <div class="simply__wrapper">
+      <div class="simply__text-wrapper">
+        <h2 class="simply__title main-title main-title--black">У нас все просто</h2>
+        <p class="simply__desc main-desc main-desc--black">
+          Не понравилась стрижка — вернём деньги и предоставим следующий визит БЕСПЛАТНО
+        </p>
+      </div>
+      <div class="simply__img-wrapper">
+        <picture>
+          <source srcset="img/simply-main.avif" type="image/avif">
+          <source srcset="img/simply-main.webp" type="image/webp">
+          <img loading="lazy" src="img/simply-main.jpg" class="image" width="620" height="398" alt="Мужчина в кресле барбершопа смотрится в зеркало">
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="truth">
+  <div class="container truth__container">
+    <div class="truth__img-wrapper">
+      <picture>
+        <source srcset="img/truth-main.avif" type="image/avif">
+        <source srcset="img/truth-main.webp" type="image/webp">
+        <img loading="lazy" src="img/truth-main.jpg" class="image" width="616" height="441" alt="Клиенты на стрижке в Barber Point">
+      </picture>
+    </div>
+    <div class="truth__text-wrapper">
+      <h2 class="truth__title main-title main-title--white">Они знают правду</h2>
+      <p class="truth__desc main-desc main-desc--white">
+        Отзывы реальных клиентов в каждом филиале
+      </p>
+      <div class="swiper truth__swiper swiper-truth">
+        <div class="swiper-wrapper swiper-truth__wrapper">
+          <div class="swiper-slide swiper-truth__slide">
+            <h3 class="swiper-truth__title">ул. Артюшкова 1</h3>
+            <ul class="swiper-truth__list list-reset">
+              <li class="swiper-truth__item card-recall card-recall--yan">
+                <div class="card-recall__person">
+                  <img loading="lazy" src="img/yan-logo.svg" class="image" width="56" height="56" alt="Яндекс карты">
+                </div>
+                <div class="card-recall__rating">4,9</div>
+                <ul class="card-recall__list list-reset">
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <div class="card-recall__number">71 отзыв</div>
+              </li>
+              <li class="swiper-truth__item card-recall">
+                <div class="card-recall__person">
+                  <img loading="lazy" src="img/gog-logo.svg" class="image" width="56" height="56" alt="Гугл карты">
+                </div>
+                <div class="card-recall__rating">5,0</div>
+                <ul class="card-recall__list list-reset">
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <div class="card-recall__number">36 отзывов</div>
+              </li>
+              <li class="swiper-truth__item card-recall">
+                <div class="card-recall__person">
+                  <img loading="lazy" src="img/2gis-logo.svg" class="image" width="56" height="56" alt="2Гис карты">
+                </div>
+                <div class="card-recall__rating">5,0</div>
+                <ul class="card-recall__list list-reset">
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <div class="card-recall__number">42 отзыва</div>
+              </li>
+            </ul>
+          </div>
+          <div class="swiper-slide swiper-truth__slide">
+            <h3 class="swiper-truth__title">ул. 40 Лет Победы 97</h3>
+            <ul class="swiper-truth__list list-reset">
+              <li class="swiper-truth__item card-recall card-recall--yan">
+                <div class="card-recall__person">
+                  <img loading="lazy" src="img/yan-logo.svg" class="image" width="56" height="56" alt="Яндекс карты">
+                </div>
+                <div class="card-recall__rating">5,0</div>
+                <ul class="card-recall__list list-reset">
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <div class="card-recall__number">286 отзывов</div>
+              </li>
+              <li class="swiper-truth__item card-recall">
+                <div class="card-recall__person">
+                  <img loading="lazy" src="img/gog-logo.svg" class="image" width="56" height="56" alt="Гугл карты">
+                </div>
+                <div class="card-recall__rating">4,8</div>
+                <ul class="card-recall__list list-reset">
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <div class="card-recall__number">95 отзывов</div>
+              </li>
+              <li class="swiper-truth__item card-recall">
+                <div class="card-recall__person">
+                  <img loading="lazy" src="img/2gis-logo.svg" class="image" width="56" height="56" alt="2Гис карты">
+                </div>
+                <div class="card-recall__rating">5,0</div>
+                <ul class="card-recall__list list-reset">
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <div class="card-recall__number">97 отзывов</div>
+              </li>
+            </ul>
+          </div>
+          <div class="swiper-slide swiper-truth__slide">
+            <h3 class="swiper-truth__title">ул. Петра Метальникова 7</h3>
+            <ul class="swiper-truth__list list-reset">
+              <li class="swiper-truth__item card-recall card-recall--yan">
+                <div class="card-recall__person">
+                  <img loading="lazy" src="img/yan-logo.svg" class="image" width="56" height="56" alt="Яндекс карты">
+                </div>
+                <div class="card-recall__rating">4,8</div>
+                <ul class="card-recall__list list-reset">
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <div class="card-recall__number">40 отзывов</div>
+              </li>
+              <li class="swiper-truth__item card-recall">
+                <div class="card-recall__person">
+                  <img loading="lazy" src="img/gog-logo.svg" class="image" width="56" height="56" alt="Гугл карты">
+                </div>
+                <div class="card-recall__rating">5,0</div>
+                <ul class="card-recall__list list-reset">
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <div class="card-recall__number">3 отзыва</div>
+              </li>
+              <li class="swiper-truth__item card-recall">
+                <div class="card-recall__person">
+                  <img loading="lazy" src="img/2gis-logo.svg" class="image" width="56" height="56" alt="2Гис карты">
+                </div>
+                <div class="card-recall__rating">5,0</div>
+                <ul class="card-recall__list list-reset">
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <div class="card-recall__number">30 отзывов</div>
+              </li>
+            </ul>
+          </div>
+          <div class="swiper-slide swiper-truth__slide">
+            <h3 class="swiper-truth__title">ул. Адмирала Серебрякова 3, к.1</h3>
+            <ul class="swiper-truth__list list-reset">
+              <li class="swiper-truth__item card-recall card-recall--yan">
+                <div class="card-recall__person">
+                  <img loading="lazy" src="img/yan-logo.svg" class="image" width="56" height="56" alt="Яндекс карты">
+                </div>
+                <div class="card-recall__rating">5,0</div>
+                <ul class="card-recall__list list-reset">
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <div class="card-recall__number">64 отзыва</div>
+              </li>
+              <li class="swiper-truth__item card-recall">
+                <div class="card-recall__person">
+                  <img loading="lazy" src="img/gog-logo.svg" class="image" width="56" height="56" alt="Гугл карты">
+                </div>
+                <div class="card-recall__rating">5,0</div>
+                <ul class="card-recall__list list-reset">
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <div class="card-recall__number">12 отзывов</div>
+              </li>
+              <li class="swiper-truth__item card-recall">
+                <div class="card-recall__person">
+                  <img loading="lazy" src="img/2gis-logo.svg" class="image" width="56" height="56" alt="2Гис карты">
+                </div>
+                <div class="card-recall__rating">5,0</div>
+                <ul class="card-recall__list list-reset">
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <div class="card-recall__number">124 отзыва</div>
+              </li>
+            </ul>
+          </div>
+          <div class="swiper-slide swiper-truth__slide">
+            <h3 class="swiper-truth__title">ул. Гидростроителей 62к2</h3>
+            <ul class="swiper-truth__list list-reset">
+              <li class="swiper-truth__item card-recall card-recall--yan">
+                <div class="card-recall__person">
+                  <img loading="lazy" src="img/yan-logo.svg" class="image" width="56" height="56" alt="Яндекс карты">
+                </div>
+                <div class="card-recall__rating">4,7</div>
+                <ul class="card-recall__list list-reset">
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <div class="card-recall__number">19 отзывов</div>
+              </li>
+              <li class="swiper-truth__item card-recall">
+                <div class="card-recall__person">
+                  <img loading="lazy" src="img/gog-logo.svg" class="image" width="56" height="56" alt="Гугл карты">
+                </div>
+                <div class="card-recall__rating">5,0</div>
+                <ul class="card-recall__list list-reset">
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <div class="card-recall__number">1 отзыв</div>
+              </li>
+              <li class="swiper-truth__item card-recall">
+                <div class="card-recall__person">
+                  <img loading="lazy" src="img/2gis-logo.svg" class="image" width="56" height="56" alt="2Гис карты">
+                </div>
+                <div class="card-recall__rating">5,0</div>
+                <ul class="card-recall__list list-reset">
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="card-recall__item" aria-label="звезда">
+                    <svg class="card-recall__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <div class="card-recall__number">38 отзывов</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="swiper-pagination swiper-truth__pagination"></div>
+        <div class="swiper-button-prev swiper-truth__btn swiper-truth__btn--prev"></div>
+        <div class="swiper-button-next swiper-truth__btn swiper-truth__btn--next"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="except">
+  <div class="container except__container">
+    <div class="except__text-wrapper">
+      <h2 class="except__title main-title main-title--black">Кроме стрижек</h2>
+      <p class="except__desc main-desc main-desc--black">
+        Чувствуй себя как дома — в BARBER POINT своя атмосфера
+      </p>
+      <ul class="except__list list-reset">
+        <li class="except__item">Акции</li>
+        <li class="except__item">Своя школа барберов</li>
+        <li class="except__item">Кэшбек за стрижки</li>
+        <li class="except__item">5 филиалов</li>
+        <li class="except__item">Реферальная система</li>
+        <li class="except__item">Напитки</li>
+      </ul>
+    </div>
+    <ul class="except__img-list list-reset">
+      <li class="except__img-item except__img-item--big">
+        <img loading="lazy" src="img/except-photo1.jpg" class="image" width="670" height="325" alt="Стена с граффити в Barber Point">
+      </li>
+      <li class="except__img-item">
+        <img loading="lazy" src="img/except-photo2.jpg" class="image" width="213" height="168" alt="Рабочии кресла в филиале Barber Point">
+      </li>
+      <li class="except__img-item">
+        <img loading="lazy" src="img/except-photo3.jpg" class="image" width="213" height="168" alt="Стелаж с мужской косметикой">
+      </li>
+      <li class="except__img-item">
+        <img loading="lazy" src="img/except-photo4.jpg" class="image" width="213" height="168" alt="Картины на стене в барбершопе Barber Point">
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="school">
+  <div class="container school__container">
+    <div class="school__img-wrapper">
+      <img loading="lazy" src="img/school-main.jpg" class="image" width="" height="" alt="Учитель - Эдуард Подгорный показывает мастер класс">
+    </div>
+    <div class="school__text-wrapper">
+      <h2 class="school__title main-title main-title--balck">Собственная школа барберов</h2>
+      <p class="school__desc main-desc main-desc--balck">Индивидуальное обучение и гарантия трудоустройства</p>
+      <a class="school__link link-more eff-line" href="http://barberpoint.ru/school/" target="_blank" rel="noopener noreferrer">Подробнее</a>
+    </div>
+  </div>
+</section>
+
+      <section class="price">
+  <div class="container price__container">
+    <h2 class="price__title main-title main-title--white">Услуги и цены</h2>
+    <p class="price__desc main-desc main-desc--white">Барбер, старший барбер, шеф-барбер. — Выбери своего!</p>
+    <div class="price__list swiper swiper-price">
+      <div class="swiper-wrapper">
+        <div class=" swiper-slide price__item card-price card-price--barber">
+          <div class="card-price__lvl">Уровень:</div>
+          <h3 class="card-price__title">Барбер</h3>
+          <ul class="card-price__user-list list-reset">
+            <li class="card-price__user-item">
+              <picture>
+                <source srcset="img/user/user1.avif" type="image/avif">
+                <source srcset="img/user/user1.webp" type="image/webp">
+                <img loading="lazy" src="img/user/user1.jpg" class="image" width="" height="" alt="Аватарка сотрудника Barber Point">
+              </picture>
+            </li>
+            <li class="card-price__user-item">
+              <picture>
+                <source srcset="img/user/user2.avif" type="image/avif">
+                <source srcset="img/user/user2.webp" type="image/webp">
+                <img loading="lazy" src="img/user/user2.jpg" class="image" width="" height="" alt="Аватарка сотрудника Barber Point">
+              </picture>
+            </li>
+            <li class="card-price__user-item">
+              <picture>
+                <source srcset="img/user/user3.avif" type="image/avif">
+                <source srcset="img/user/user3.webp" type="image/webp">
+                <img loading="lazy" src="img/user/user3.jpg" class="image" width="" height="" alt="Аватарка сотрудника Barber Point">
+              </picture>
+            </li>
+            <li class="card-price__user-item">
+              <picture>
+                <source srcset="img/user/user4.avif" type="image/avif">
+                <source srcset="img/user/user4.webp" type="image/webp">
+                <img loading="lazy" src="img/user/user4.jpg" class="image" width="" height="" alt="Аватарка сотрудника Barber Point">
+              </picture>
+            </li>
+            <li class="card-price__user-item">
+              <picture>
+                <source srcset="img/user/user5.avif" type="image/avif">
+                <source srcset="img/user/user5.webp" type="image/webp">
+                <img loading="lazy" src="img/user/user5.jpg" class="image" width="" height="" alt="Аватарка сотрудника Barber Point">
+              </picture>
+            </li>
+            <li class="card-price__user-item card-price__user-item--other">
+              +6
+            </li>
+          </ul>
+          <ul class="card-price__feature-list list-reset feature-list feature-list--barber">
+            <li class="feature-list__item">
+              <div class="feature-list__name">Мастерство</div>
+              <div class="feature-list__value"></div>
+            </li>
+            <li class="feature-list__item">
+              <div class="feature-list__name">Харизма</div>
+              <div class="feature-list__value"></div>
+            </li>
+            <li class="feature-list__item">
+              <div class="feature-list__name">Опыт</div>
+              <div class="feature-list__value"></div>
+            </li>
+          </ul>
+          <ul class="card-price__price-list list-reset price-list">
+            <li class="price-list__item">
+              <div class="price-list__name">Стрижка</div>
+              <div class="price-list__value">1090 Р</div>
+            </li>
+            <li class="price-list__item">
+              <div class="price-list__name">Детская стрижка<br>(до 12 лет)</div>
+              <div class="price-list__value">690 Р</div>
+            </li>
+            <li class="price-list__item">
+              <div class="price-list__name">Стрижка под машинку</div>
+              <div class="price-list__value">490 Р</div>
+            </li>
+            <li class="price-list__item">
+              <div class="price-list__name">Окантовка и укладка</div>
+              <div class="price-list__value">590 Р</div>
+            </li>
+            <li class="price-list__item">
+              <div class="price-list__name">Моделирование бороды и усов</div>
+              <div class="price-list__value">590 Р</div>
+            </li>
+            <li class="price-list__item">
+              <div class="price-list__name">Камуфляж седины</div>
+              <div class="price-list__value">490 Р</div>
+            </li>
+            <li class="price-list__item">
+              <div class="price-list__name">Стрижка студента</div>
+              <div class="price-list__value">890 Р</div>
+            </li>
+            <li class="price-list__item">
+              <div class="price-list__name">Стрижка отца и сына</div>
+              <div class="price-list__value">1590 Р</div>
+            </li>
+            <li class="price-list__item">
+              <div class="price-list__name">Стрижка + борода</div>
+              <div class="price-list__value">1490 Р</div>
+            </li>
+            <li class="price-list__item">
+              <div class="price-list__name">1+1</div>
+              <div class="price-list__value">1990 Р</div>
+            </li>
+          </ul>
+        </div>
+        <div class=" swiper-slide price__item card-price card-price--older-barber">
+          <div class="card-price__lvl">Уровень:</div>
+          <h3 class="card-price__title">Старший барбер</h3>
+          <ul class="card-price__user-list list-reset">
+            <li class="card-price__user-item">
+              <picture>
+                <source srcset="img/user/user6.avif" type="image/avif">
+                <source srcset="img/user/user6.webp" type="image/webp">
+                <img loading="lazy" src="img/user/user6.jpg" class="image" width="" height="" alt="Аватарка сотрудника Barber Point">
+              </picture>
+            </li>
+            <li class="card-price__user-item">
+              <picture>
+                <source srcset="img/user/user7.avif" type="image/avif">
+                <source srcset="img/user/user7.webp" type="image/webp">
+                <img loading="lazy" src="img/user/user7.jpg" class="image" width="" height="" alt="Аватарка сотрудника Barber Point">
+              </picture>
+            </li>
+            <li class="card-price__user-item">
+              <picture>
+                <source srcset="img/user/user8.avif" type="image/avif">
+                <source srcset="img/user/user8.webp" type="image/webp">
+                <img loading="lazy" src="img/user/user8.jpg" class="image" width="" height="" alt="Аватарка сотрудника Barber Point">
+              </picture>
+            </li>
+            <li class="card-price__user-item">
+              <picture>
+                <source srcset="img/user/user9.avif" type="image/avif">
+                <source srcset="img/user/user9.webp" type="image/webp">
+                <img loading="lazy" src="img/user/user9.jpg" class="image" width="" height="" alt="Аватарка сотрудника Barber Point">
+              </picture>
+            </li>
+            <li class="card-price__user-item">
+              <picture>
+                <source srcset="img/user/user10.avif" type="image/avif">
+                <source srcset="img/user/user10.webp" type="image/webp">
+                <img loading="lazy" src="img/user/user10.jpg" class="image" width="" height="" alt="Аватарка сотрудника Barber Point">
+              </picture>
+            </li>
+            <li class="card-price__user-item card-price__user-item--other">
+              +6
+            </li>
+          </ul>
+          <ul class="card-price__feature-list list-reset feature-list feature-list--older-barber">
+            <li class="feature-list__item">
+              <div class="feature-list__name">Мастерство</div>
+              <div class="feature-list__value"></div>
+            </li>
+            <li class="feature-list__item">
+              <div class="feature-list__name">Харизма</div>
+              <div class="feature-list__value"></div>
+            </li>
+            <li class="feature-list__item">
+              <div class="feature-list__name">Опыт</div>
+              <div class="feature-list__value"></div>
+            </li>
+          </ul>
+          <ul class="card-price__price-list list-reset price-list">
+            <li class="price-list__item">
+              <div class="price-list__name">Стрижка</div>
+              <div class="price-list__value">1190 Р</div>
+            </li>
+            <li class="price-list__item">
+              <div class="price-list__name">Детская стрижка<br>(до 12 лет)</div>
+              <div class="price-list__value">790 Р</div>
+            </li>
+            <li class="price-list__item">
+              <div class="price-list__name">Окантовка и укладка</div>
+              <div class="price-list__value">690 Р</div>
+            </li>
+            <li class="price-list__item">
+              <div class="price-list__name">Моделирование бороды и усов</div>
+              <div class="price-list__value">690 Р</div>
+            </li>
+            <li class="price-list__item">
+              <div class="price-list__name">Камуфляж седины</div>
+              <div class="price-list__value">590 Р</div>
+            </li>
+            <li class="price-list__item">
+              <div class="price-list__name">Стрижка студента</div>
+              <div class="price-list__value">990 Р</div>
+            </li>
+            <li class="price-list__item">
+              <div class="price-list__name">Стрижка отца и сына</div>
+              <div class="price-list__value">1790 Р</div>
+            </li>
+            <li class="price-list__item">
+              <div class="price-list__name">Стрижка + борода</div>
+              <div class="price-list__value">1590 Р</div>
+            </li>
+            <li class="price-list__item">
+              <div class="price-list__name">1+1</div>
+              <div class="price-list__value">2090 Р</div>
+            </li>
+          </ul>
+        </div>
+        <div class=" swiper-slide price__item card-price card-price--chief-barber">
+          <div class="card-price__lvl">Уровень:</div>
+          <h3 class="card-price__title">Шеф — барбер</h3>
+          <div class="card-price__user-list">
+            <div class="card-price__user-item card-price__user-item--chief-barber"">
+              <picture>
+                <source srcset="img/user/user11.avif" type="image/avif">
+                <source srcset="img/user/user11.webp" type="image/webp">
+                <img loading="lazy" src="img/user/user11.jpg" class="image" width="" height="" alt="Аватарка сотрудника Barber Point">
+              </picture>
+            </div>
+            <div class="card-price__user-desc">
+              <div class="card-price__user-name">Эдуард Подгорный</div>
+              <div class="card-price__user-status">Он такой один!</div>
+            </div>
+          </div>
+          <ul class="card-price__feature-list list-reset feature-list feature-list--chief-barber">
+            <li class="feature-list__item">
+              <div class="feature-list__name">Мастерство</div>
+              <div class="feature-list__value"></div>
+            </li>
+            <li class="feature-list__item">
+              <div class="feature-list__name">Харизма</div>
+              <div class="feature-list__value"></div>
+            </li>
+            <li class="feature-list__item">
+              <div class="feature-list__name">Опыт</div>
+              <div class="feature-list__value"></div>
+            </li>
+          </ul>
+          <ul class="card-price__price-list list-reset price-list">
+            <li class="price-list__item">
+              <div class="price-list__name">Стрижка</div>
+              <div class="price-list__value">1690 Р</div>
+            </li>
+            <li class="price-list__item">
+              <div class="price-list__name">Детская стрижка<br>(до 12 лет)</div>
+              <div class="price-list__value">1000 Р</div>
+            </li>
+            <li class="price-list__item">
+              <div class="price-list__name">Окантовка и укладка</div>
+              <div class="price-list__value">1000 Р</div>
+            </li>
+            <li class="price-list__item">
+              <div class="price-list__name">Моделирование бороды и усов</div>
+              <div class="price-list__value">1000 Р</div>
+            </li>
+            <li class="price-list__item">
+              <div class="price-list__name">Королевское бритьё</div>
+              <div class="price-list__value">1400 Р</div>
+            </li>
+            <li class="price-list__item">
+              <div class="price-list__name">Камуфляж седины</div>
+              <div class="price-list__value">700 — 2000 Р</div>
+            </li>
+            <li class="price-list__item">
+              <div class="price-list__name">Стрижка студента</div>
+              <div class="price-list__value">1300 Р</div>
+            </li>
+            <li class="price-list__item">
+              <div class="price-list__name">Стрижка отца и сына</div>
+              <div class="price-list__value">2600 Р</div>
+            </li>
+            <li class="price-list__item">
+              <div class="price-list__name">Стрижка + борода</div>
+              <div class="price-list__value">2200 Р</div>
+            </li>
+            <li class="price-list__item">
+              <div class="price-list__name">1+1</div>
+              <div class="price-list__value">2500 Р</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="price__settings">
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    <button class="price__btn btn-reset main-btn main-btn--color">Записаться онлайн</button>
+  </div>
+</section>
+
+      <section class="worker">
+  <div class="container worker__container">
+    <div class="worker__left-wrapper swiper swiper-worker">
+      <h2 class="worker__title worker__title--desktop main-title main-title--black">Вооружены и особо опасны</h2>
+      <p class="worker__desc worker__desc--desktop main-desc main-desc--black">
+        Если бы за крутые стрижки сажали — то эти ребята давно были бы за решеткой!
+      </p>
+      <div class="worker__target-list swiper-wrapper">
+        <div class="worker__target-item swiper-slide">
+          <buttom class="worker__btn btn-reset worker-btn worker-btn--active" data-tabs-target = '1' tabindex="0">
+            <div class="worker-btn__img-wrapper">
+              <picture>
+                <source srcset="img/worker1.avif" type="image/avif">
+                <source srcset="img/worker1.webp" type="image/webp">
+                <img loading="lazy" src="img/worker1.jpg" class="image" width="69" height="69" alt="Эдуард Подгорный, шеф-барбер сети Barber Point">
+              </picture>
+            </div>
+            <div class="worker-btn__name">Эдуард</div>
+          </buttom>
+        </div>
+        <div class="worker__target-item swiper-slide">
+          <buttom class="worker__btn btn-reset worker-btn" data-tabs-target = '2' tabindex="0">
+            <div class="worker-btn__img-wrapper">
+              <picture>
+                <source srcset="img/worker2.avif" type="image/avif">
+                <source srcset="img/worker2.webp" type="image/webp">
+                <img loading="lazy" src="img/worker2.jpg" class="image" width="69" height="69" alt="Артём, барбер сети Barber Point">
+              </picture>
+            </div>
+            <div class="worker-btn__name">Артём</div>
+          </buttom>
+        </div>
+        <div class="worker__target-item swiper-slide">
+          <buttom class="worker__btn btn-reset worker-btn" data-tabs-target = '3' tabindex="0">
+            <div class="worker-btn__img-wrapper">
+              <picture>
+                <source srcset="img/worker3.avif" type="image/avif">
+                <source srcset="img/worker3.webp" type="image/webp">
+                <img loading="lazy" src="img/worker3.jpg" class="image" width="69" height="69" alt="Анастасия, барбер сети Barber Point">
+              </picture>
+            </div>
+            <div class="worker-btn__name">Анастасия</div>
+          </buttom>
+        </div>
+        <div class="worker__target-item swiper-slide">
+          <buttom class="worker__btn btn-reset worker-btn" data-tabs-target = '4' tabindex="0">
+            <div class="worker-btn__img-wrapper">
+              <picture>
+                <source srcset="img/worker4.avif" type="image/avif">
+                <source srcset="img/worker4.webp" type="image/webp">
+                <img loading="lazy" src="img/worker4.jpg" class="image" width="69" height="69" alt="Александр, барбер сети Barber Point">
+              </picture>
+            </div>
+            <div class="worker-btn__name">Александр</div>
+          </buttom>
+        </div>
+        <div class="worker__target-item swiper-slide">
+          <buttom class="worker__btn btn-reset worker-btn" data-tabs-target = '5' tabindex="0">
+            <div class="worker-btn__img-wrapper">
+              <picture>
+                <source srcset="img/worker5.avif" type="image/avif">
+                <source srcset="img/worker5.webp" type="image/webp">
+                <img loading="lazy" src="img/worker5.jpg" class="image" width="69" height="69" alt="Виктория, барбер сети Barber Point">
+              </picture>
+            </div>
+            <div class="worker-btn__name">Виктория</div>
+          </buttom>
+        </div>
+        <div class="worker__target-item swiper-slide">
+          <buttom class="worker__btn btn-reset worker-btn" data-tabs-target = '6' tabindex="0">
+            <div class="worker-btn__img-wrapper">
+              <picture>
+                <source srcset="img/worker6.avif" type="image/avif">
+                <source srcset="img/worker6.webp" type="image/webp">
+                <img loading="lazy" src="img/worker6.jpg" class="image" width="69" height="69" alt="Антон, барбер сети Barber Point">
+              </picture>
+            </div>
+            <div class="worker-btn__name">Антон</div>
+          </buttom>
+        </div>
+        <div class="worker__target-item swiper-slide">
+          <buttom class="worker__btn btn-reset worker-btn" data-tabs-target = '7' tabindex="0">
+            <div class="worker-btn__img-wrapper">
+              <picture>
+                <source srcset="img/worker7.avif" type="image/avif">
+                <source srcset="img/worker7.webp" type="image/webp">
+                <img loading="lazy" src="img/worker7.jpg" class="image" width="69" height="69" alt="Иван, барбер сети Barber Point">
+              </picture>
+            </div>
+            <div class="worker-btn__name">Иван</div>
+          </buttom>
+        </div>
+        <div class="worker__target-item swiper-slide">
+          <buttom class="worker__btn btn-reset worker-btn" data-tabs-target = '10' tabindex="0">
+            <div class="worker-btn__img-wrapper">
+              <picture>
+                <source srcset="img/worker10.avif" type="image/avif">
+                <source srcset="img/worker10.webp" type="image/webp">
+                <img loading="lazy" src="img/worker10.jpg" class="image" width="69" height="69" alt="Евгения, барбер сети Barber Point">
+              </picture>
+            </div>
+            <div class="worker-btn__name">Евгения</div>
+          </buttom>
+        </div>
+        <div class="worker__target-item swiper-slide">
+          <buttom class="worker__btn btn-reset worker-btn" data-tabs-target = '11' tabindex="0">
+            <div class="worker-btn__img-wrapper">
+              <picture>
+                <source srcset="img/worker11.avif" type="image/avif">
+                <source srcset="img/worker11.webp" type="image/webp">
+                <img loading="lazy" src="img/worker11.jpg" class="image" width="69" height="69" alt="Ника, барбер сети Barber Point">
+              </picture>
+            </div>
+            <div class="worker-btn__name">Ника</div>
+          </buttom>
+        </div>
+      </div>
+    </div>
+    <ul class="worker__content-list list-reset">
+      <li class="worker__content-item card-worker card-worker--active" data-tabs-content = '1'>
+        <div class="card-worker__img-wrapper">
+          <picture>
+            <source srcset="img/worker1.avif" type="image/avif">
+            <source srcset="img/worker1.webp" type="image/webp">
+            <img loading="lazy" src="img/worker1.jpg" class="image" width="395" height="330" alt="Эдуард Подгорный, шеф-барбер сети Barber Point">
+          </picture>
+        </div>
+        <div class="card-worker__content-wrapper">
+          <div class="card-worker__top-wrapper">
+            <h3 class="card-worker__title">Эдуард</h3>
+            <div class="card-worker__experience">
+              <svg class="card-worker__experience-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.5 6.75C5.74264 6.75 6.75 5.74264 6.75 4.5C6.75 3.25736 5.74264 2.25 4.5 2.25C3.25736 2.25 2.25 3.25736 2.25 4.5C2.25 5.74264 3.25736 6.75 4.5 6.75Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M4.5 15.75C5.74264 15.75 6.75 14.7426 6.75 13.5C6.75 12.2574 5.74264 11.25 4.5 11.25C3.25736 11.25 2.25 12.2574 2.25 13.5C2.25 14.7426 3.25736 15.75 4.5 15.75Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.0001 3L6.09009 11.91" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10.8525 10.8601L15 15.0001" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6.09009 6.09009L9.00009 9.00009" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div class="card-worker__experience-value">c 1993 года</div>
+            </div>
+          </div>
+          <div class="card-worker__subtitle">Шеф-барбер</div>
+          <div class="card-worker__desc">
+            Эдуард Подгорный, он же Санта Эд, он же мастер-шеф, он же старший Барбер. Многогранная и творческая натура. Харизматичный мастер. Стрижёт всю сознательную жизнь.
+          </div>
+        </div>
+      </li>
+      <li class="worker__content-item card-worker" data-tabs-content = '2'>
+        <div class="card-worker__img-wrapper">
+          <picture>
+            <source srcset="img/worker2.avif" type="image/avif">
+            <source srcset="img/worker2.webp" type="image/webp">
+            <img loading="lazy" src="img/worker2.jpg" class="image" width="395" height="330" alt="Артём, барбер сети Barber Point">
+          </picture>
+        </div>
+        <div class="card-worker__content-wrapper">
+          <div class="card-worker__top-wrapper">
+            <h3 class="card-worker__title">Артём</h3>
+            <div class="card-worker__experience">
+              <svg class="card-worker__experience-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.5 6.75C5.74264 6.75 6.75 5.74264 6.75 4.5C6.75 3.25736 5.74264 2.25 4.5 2.25C3.25736 2.25 2.25 3.25736 2.25 4.5C2.25 5.74264 3.25736 6.75 4.5 6.75Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M4.5 15.75C5.74264 15.75 6.75 14.7426 6.75 13.5C6.75 12.2574 5.74264 11.25 4.5 11.25C3.25736 11.25 2.25 12.2574 2.25 13.5C2.25 14.7426 3.25736 15.75 4.5 15.75Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.0001 3L6.09009 11.91" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10.8525 10.8601L15 15.0001" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6.09009 6.09009L9.00009 9.00009" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div class="card-worker__experience-value">с 2019 года</div>
+            </div>
+          </div>
+          <div class="card-worker__subtitle">Старший-барбер</div>
+          <div class="card-worker__desc">
+            Эдуард Подгорный, он же Санта Эд, он же мастер-шеф, он же старший Барбер. Многогранная и творческая натура. Харизматичный мастер. Стрижёт всю сознательную жизнь.
+          </div>
+        </div>
+      </li>
+      <li class="worker__content-item card-worker" data-tabs-content = '3'>
+        <div class="card-worker__img-wrapper">
+          <picture>
+            <source srcset="img/worker3.avif" type="image/avif">
+            <source srcset="img/worker3.webp" type="image/webp">
+            <img loading="lazy" src="img/worker3.jpg" class="image" width="395" height="330" alt="Анастасия, барбер сети Barber Point">
+          </picture>
+        </div>
+        <div class="card-worker__content-wrapper">
+          <div class="card-worker__top-wrapper">
+            <h3 class="card-worker__title">Анастасия</h3>
+            <div class="card-worker__experience">
+              <svg class="card-worker__experience-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.5 6.75C5.74264 6.75 6.75 5.74264 6.75 4.5C6.75 3.25736 5.74264 2.25 4.5 2.25C3.25736 2.25 2.25 3.25736 2.25 4.5C2.25 5.74264 3.25736 6.75 4.5 6.75Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M4.5 15.75C5.74264 15.75 6.75 14.7426 6.75 13.5C6.75 12.2574 5.74264 11.25 4.5 11.25C3.25736 11.25 2.25 12.2574 2.25 13.5C2.25 14.7426 3.25736 15.75 4.5 15.75Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.0001 3L6.09009 11.91" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10.8525 10.8601L15 15.0001" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6.09009 6.09009L9.00009 9.00009" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div class="card-worker__experience-value">с 2017 года</div>
+            </div>
+          </div>
+          <div class="card-worker__subtitle">Старший-барбер</div>
+          <div class="card-worker__desc">
+            Эдуард Подгорный, он же Санта Эд, он же мастер-шеф, он же старший Барбер. Многогранная и творческая натура. Харизматичный мастер. Стрижёт всю сознательную жизнь.
+          </div>
+        </div>
+      </li>
+      <li class="worker__content-item card-worker" data-tabs-content = '4'>
+        <div class="card-worker__img-wrapper">
+          <picture>
+            <source srcset="img/worker4.avif" type="image/avif">
+            <source srcset="img/worker4.webp" type="image/webp">
+            <img loading="lazy" src="img/worker4.jpg" class="image" width="395" height="330" alt="Александр, барбер сети Barber Point">
+          </picture>
+        </div>
+        <div class="card-worker__content-wrapper">
+          <div class="card-worker__top-wrapper">
+            <h3 class="card-worker__title">Александр</h3>
+            <div class="card-worker__experience">
+              <svg class="card-worker__experience-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.5 6.75C5.74264 6.75 6.75 5.74264 6.75 4.5C6.75 3.25736 5.74264 2.25 4.5 2.25C3.25736 2.25 2.25 3.25736 2.25 4.5C2.25 5.74264 3.25736 6.75 4.5 6.75Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M4.5 15.75C5.74264 15.75 6.75 14.7426 6.75 13.5C6.75 12.2574 5.74264 11.25 4.5 11.25C3.25736 11.25 2.25 12.2574 2.25 13.5C2.25 14.7426 3.25736 15.75 4.5 15.75Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.0001 3L6.09009 11.91" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10.8525 10.8601L15 15.0001" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6.09009 6.09009L9.00009 9.00009" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div class="card-worker__experience-value">с 2017 года</div>
+            </div>
+          </div>
+          <div class="card-worker__subtitle">Старший-барбер</div>
+          <div class="card-worker__desc">
+            Эдуард Подгорный, он же Санта Эд, он же мастер-шеф, он же старший Барбер. Многогранная и творческая натура. Харизматичный мастер. Стрижёт всю сознательную жизнь.
+          </div>
+        </div>
+      </li>
+      <li class="worker__content-item card-worker" data-tabs-content = '5'>
+        <div class="card-worker__img-wrapper">
+          <picture>
+            <source srcset="img/worker5.avif" type="image/avif">
+            <source srcset="img/worker5.webp" type="image/webp">
+            <img loading="lazy" src="img/worker5.jpg" class="image" width="395" height="330" alt="Виктория, барбер сети Barber Point">
+          </picture>
+        </div>
+        <div class="card-worker__content-wrapper">
+          <div class="card-worker__top-wrapper">
+            <h3 class="card-worker__title">Виктория</h3>
+            <div class="card-worker__experience">
+              <svg class="card-worker__experience-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.5 6.75C5.74264 6.75 6.75 5.74264 6.75 4.5C6.75 3.25736 5.74264 2.25 4.5 2.25C3.25736 2.25 2.25 3.25736 2.25 4.5C2.25 5.74264 3.25736 6.75 4.5 6.75Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M4.5 15.75C5.74264 15.75 6.75 14.7426 6.75 13.5C6.75 12.2574 5.74264 11.25 4.5 11.25C3.25736 11.25 2.25 12.2574 2.25 13.5C2.25 14.7426 3.25736 15.75 4.5 15.75Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.0001 3L6.09009 11.91" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10.8525 10.8601L15 15.0001" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6.09009 6.09009L9.00009 9.00009" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div class="card-worker__experience-value">с 2017 года</div>
+            </div>
+          </div>
+          <div class="card-worker__subtitle">Старший-барбер</div>
+          <div class="card-worker__desc">
+            Эдуард Подгорный, он же Санта Эд, он же мастер-шеф, он же старший Барбер. Многогранная и творческая натура. Харизматичный мастер. Стрижёт всю сознательную жизнь.
+          </div>
+        </div>
+      </li>
+      <li class="worker__content-item card-worker" data-tabs-content = '6'>
+        <div class="card-worker__img-wrapper">
+          <picture>
+            <source srcset="img/worker6.avif" type="image/avif">
+            <source srcset="img/worker6.webp" type="image/webp">
+            <img loading="lazy" src="img/worker6.jpg" class="image" width="395" height="330" alt="Антон, барбер сети Barber Point">
+          </picture>
+        </div>
+        <div class="card-worker__content-wrapper">
+          <div class="card-worker__top-wrapper">
+            <h3 class="card-worker__title">Антон</h3>
+            <div class="card-worker__experience">
+              <svg class="card-worker__experience-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.5 6.75C5.74264 6.75 6.75 5.74264 6.75 4.5C6.75 3.25736 5.74264 2.25 4.5 2.25C3.25736 2.25 2.25 3.25736 2.25 4.5C2.25 5.74264 3.25736 6.75 4.5 6.75Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M4.5 15.75C5.74264 15.75 6.75 14.7426 6.75 13.5C6.75 12.2574 5.74264 11.25 4.5 11.25C3.25736 11.25 2.25 12.2574 2.25 13.5C2.25 14.7426 3.25736 15.75 4.5 15.75Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.0001 3L6.09009 11.91" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10.8525 10.8601L15 15.0001" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6.09009 6.09009L9.00009 9.00009" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div class="card-worker__experience-value">с 2017 года</div>
+            </div>
+          </div>
+          <div class="card-worker__subtitle">Старший-барбер</div>
+          <div class="card-worker__desc">
+            Эдуард Подгорный, он же Санта Эд, он же мастер-шеф, он же старший Барбер. Многогранная и творческая натура. Харизматичный мастер. Стрижёт всю сознательную жизнь.
+          </div>
+        </div>
+      </li>
+      <li class="worker__content-item card-worker" data-tabs-content = '7'>
+        <div class="card-worker__img-wrapper">
+          <picture>
+            <source srcset="img/worker7.avif" type="image/avif">
+            <source srcset="img/worker7.webp" type="image/webp">
+            <img loading="lazy" src="img/worker7.jpg" class="image" width="395" height="330" alt="Иван, барбер сети Barber Point">
+          </picture>
+        </div>
+        <div class="card-worker__content-wrapper">
+          <div class="card-worker__top-wrapper">
+            <h3 class="card-worker__title">Иван</h3>
+            <div class="card-worker__experience">
+              <svg class="card-worker__experience-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.5 6.75C5.74264 6.75 6.75 5.74264 6.75 4.5C6.75 3.25736 5.74264 2.25 4.5 2.25C3.25736 2.25 2.25 3.25736 2.25 4.5C2.25 5.74264 3.25736 6.75 4.5 6.75Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M4.5 15.75C5.74264 15.75 6.75 14.7426 6.75 13.5C6.75 12.2574 5.74264 11.25 4.5 11.25C3.25736 11.25 2.25 12.2574 2.25 13.5C2.25 14.7426 3.25736 15.75 4.5 15.75Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.0001 3L6.09009 11.91" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10.8525 10.8601L15 15.0001" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6.09009 6.09009L9.00009 9.00009" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div class="card-worker__experience-value">с 2017 года</div>
+            </div>
+          </div>
+          <div class="card-worker__subtitle">Барбер</div>
+          <div class="card-worker__desc">
+            Эдуард Подгорный, он же Санта Эд, он же мастер-шеф, он же старший Барбер. Многогранная и творческая натура. Харизматичный мастер. Стрижёт всю сознательную жизнь.
+          </div>
+        </div>
+      </li>
+      <li class="worker__content-item card-worker" data-tabs-content = '10'>
+        <div class="card-worker__img-wrapper">
+          <picture>
+            <source srcset="img/worker10.avif" type="image/avif">
+            <source srcset="img/worker10.webp" type="image/webp">
+            <img loading="lazy" src="img/worker10.jpg" class="image" width="395" height="330" alt="Евгения, барбер сети Barber Point">
+          </picture>
+        </div>
+        <div class="card-worker__content-wrapper">
+          <div class="card-worker__top-wrapper">
+            <h3 class="card-worker__title">Евгения</h3>
+            <div class="card-worker__experience">
+              <svg class="card-worker__experience-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.5 6.75C5.74264 6.75 6.75 5.74264 6.75 4.5C6.75 3.25736 5.74264 2.25 4.5 2.25C3.25736 2.25 2.25 3.25736 2.25 4.5C2.25 5.74264 3.25736 6.75 4.5 6.75Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M4.5 15.75C5.74264 15.75 6.75 14.7426 6.75 13.5C6.75 12.2574 5.74264 11.25 4.5 11.25C3.25736 11.25 2.25 12.2574 2.25 13.5C2.25 14.7426 3.25736 15.75 4.5 15.75Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.0001 3L6.09009 11.91" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10.8525 10.8601L15 15.0001" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6.09009 6.09009L9.00009 9.00009" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div class="card-worker__experience-value">с 2017 года</div>
+            </div>
+          </div>
+          <div class="card-worker__subtitle">Барбер</div>
+          <div class="card-worker__desc">
+            Эдуард Подгорный, он же Санта Эд, он же мастер-шеф, он же старший Барбер. Многогранная и творческая натура. Харизматичный мастер. Стрижёт всю сознательную жизнь.
+          </div>
+        </div>
+      </li>
+      <li class="worker__content-item card-worker" data-tabs-content = '11'>
+        <div class="card-worker__img-wrapper">
+          <picture>
+            <source srcset="img/worker11.avif" type="image/avif">
+            <source srcset="img/worker11.webp" type="image/webp">
+            <img loading="lazy" src="img/worker11.jpg" class="image" width="395" height="330" alt="Ника, барбер сети Barber Point">
+          </picture>
+        </div>
+        <div class="card-worker__content-wrapper">
+          <div class="card-worker__top-wrapper">
+            <h3 class="card-worker__title">Ника</h3>
+            <div class="card-worker__experience">
+              <svg class="card-worker__experience-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.5 6.75C5.74264 6.75 6.75 5.74264 6.75 4.5C6.75 3.25736 5.74264 2.25 4.5 2.25C3.25736 2.25 2.25 3.25736 2.25 4.5C2.25 5.74264 3.25736 6.75 4.5 6.75Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M4.5 15.75C5.74264 15.75 6.75 14.7426 6.75 13.5C6.75 12.2574 5.74264 11.25 4.5 11.25C3.25736 11.25 2.25 12.2574 2.25 13.5C2.25 14.7426 3.25736 15.75 4.5 15.75Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.0001 3L6.09009 11.91" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10.8525 10.8601L15 15.0001" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6.09009 6.09009L9.00009 9.00009" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div class="card-worker__experience-value">с 2017 года</div>
+            </div>
+          </div>
+          <div class="card-worker__subtitle">Барбер</div>
+          <div class="card-worker__desc">
+            Эдуард Подгорный, он же Санта Эд, он же мастер-шеф, он же старший Барбер. Многогранная и творческая натура. Харизматичный мастер. Стрижёт всю сознательную жизнь.
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class="worker__replace">
+      <div class="worker__title main-title main-title--black">Вооружены и особо опасны</div>
+      <p class="worker__desc main-desc main-desc--black">
+        Если бы за крутые стрижки сажали — то эти ребята давно были бы за решеткой!
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="swiper ">
+  <div class="swiper-wrapper">
+     <div class="swiper-slide">
+     </div>
+  </div>
+</div>
+
+      <section class="news">
+  <div class="container news__container">
+    <h2 class="news__title main-title main-title--white">Полезное от barber point</h2>
+    <p class="news__desc main-desc main-desc--white">Уход за волосами, стиль, новости и ещё много чего интересного</p>
+    <ul class="news__list list-reset">
+      <li class="news__item card-news">
+        <div class="card-news__img-wrapper">
+          <picture>
+            <source srcset="img/news1.avif" type="image/avif">
+            <source srcset="img/news1.webp" type="image/webp">
+            <img loading="lazy" src="img/news1.jpg" class="image" width="270" height="153" alt="Мужская борода">
+          </picture>
+        </div>
+        <div class="card-news__content-wrapper">
+          <h3 class="card-news__title">Что делает мужчину привлекательным?</h3>
+          <p class="card-news__desc">Наличие бороды на лице прямым текстом сообщает окружающим — Я мужик! Борода –украшение мужского лица, признак силы и брутальности.</p>
+          <div class="card-news__bottom-wrapper">
+            <div class="card-news__time">
+              <svg class="card-news__time-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_256_1351)">
+                <path d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 4.5V9L12 10.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_256_1351">
+                <rect width="18" height="18" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+              <div class="card-news__time-value">2 минуты</div>
+            </div>
+            <a class="card-news__link" href="#">
+              <span class="card-news__link-text">Читать</span>
+              <svg class="card-news__link-icon" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L7 7L1 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="news__item card-news">
+        <div class="card-news__img-wrapper">
+          <picture>
+            <source srcset="img/news2.avif" type="image/avif">
+            <source srcset="img/news2.webp" type="image/webp">
+            <img loading="lazy" src="img/news2.jpg" class="image" width="270" height="153" alt="Мужская борода">
+          </picture>
+        </div>
+        <div class="card-news__content-wrapper">
+          <h3 class="card-news__title">Что делает мужчину привлекательным?</h3>
+          <p class="card-news__desc">Наличие бороды на лице прямым текстом сообщает окружающим — Я мужик! Борода –украшение мужского лица, признак силы и брутальности.</p>
+          <div class="card-news__bottom-wrapper">
+            <div class="card-news__time">
+              <svg class="card-news__time-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_256_1351)">
+                <path d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 4.5V9L12 10.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_256_1351">
+                <rect width="18" height="18" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+              <div class="card-news__time-value">2 минуты</div>
+            </div>
+            <a class="card-news__link" href="#">
+              <span class="card-news__link-text">Читать</span>
+              <svg class="card-news__link-icon" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L7 7L1 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="news__item card-news">
+        <div class="card-news__img-wrapper">
+          <picture>
+            <source srcset="img/news1.avif" type="image/avif">
+            <source srcset="img/news1.webp" type="image/webp">
+            <img loading="lazy" src="img/news1.jpg" class="image" width="270" height="153" alt="Мужская борода">
+          </picture>
+        </div>
+        <div class="card-news__content-wrapper">
+          <h3 class="card-news__title">Что делает мужчину привлекательным?</h3>
+          <p class="card-news__desc">Наличие бороды на лице прямым текстом сообщает окружающим — Я мужик! Борода –украшение мужского лица, признак силы и брутальности.</p>
+          <div class="card-news__bottom-wrapper">
+            <div class="card-news__time">
+              <svg class="card-news__time-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_256_1351)">
+                <path d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 4.5V9L12 10.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_256_1351">
+                <rect width="18" height="18" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+              <div class="card-news__time-value">2 минуты</div>
+            </div>
+            <a class="card-news__link" href="#">
+              <span class="card-news__link-text">Читать</span>
+              <svg class="card-news__link-icon" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L7 7L1 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="news__item card-news">
+        <div class="card-news__img-wrapper">
+          <picture>
+            <source srcset="img/news2.avif" type="image/avif">
+            <source srcset="img/news2.webp" type="image/webp">
+            <img loading="lazy" src="img/news2.jpg" class="image" width="270" height="153" alt="Мужская борода">
+          </picture>
+        </div>
+        <div class="card-news__content-wrapper">
+          <h3 class="card-news__title">Что делает мужчину привлекательным?</h3>
+          <p class="card-news__desc">Наличие бороды на лице прямым текстом сообщает окружающим — Я мужик! Борода –украшение мужского лица, признак силы и брутальности.</p>
+          <div class="card-news__bottom-wrapper">
+            <div class="card-news__time">
+              <svg class="card-news__time-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_256_1351)">
+                <path d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 4.5V9L12 10.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_256_1351">
+                <rect width="18" height="18" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+              <div class="card-news__time-value">2 минуты</div>
+            </div>
+            <a class="card-news__link" href="#">
+              <span class="card-news__link-text">Читать</span>
+              <svg class="card-news__link-icon" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L7 7L1 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <a href="#" class="news__link">Читать все новости</a>
+  </div>
+</section>
+
+      <section class="gallery">
+  <div class="container gallery__container">
+    <h2 class="gallery__title main-title main-title--black">Галерея работ</h2>
+    <p class="gallery__desc main-desc main-desc--black">Наши довольные клиенты</p>
+    <div class="swiper gallery__swiper swiper-gallery">
+      <div class="swiper-wrapper swiper-gallery__wrapper">
+        <div class="swiper-slide swiper-gallery__slide">
+          <picture>
+            <source srcset="img/gallery1.avif" type="image/avif">
+            <source srcset="img/gallery1.webp" type="image/webp">
+            <img loading="lazy" src="img/gallery1.jpg" class="image" width="530" height="530" alt="Мужская стрижка">
+          </picture>
+        </div>
+        <div class="swiper-slide swiper-gallery__slide">
+          <picture>
+            <source srcset="img/gallery2.avif" type="image/avif">
+            <source srcset="img/gallery2.webp" type="image/webp">
+            <img loading="lazy" src="img/gallery2.jpg" class="image" width="530" height="530" alt="Мужская стрижка">
+          </picture>
+        </div>
+        <div class="swiper-slide swiper-gallery__slide">
+          <picture>
+            <source srcset="img/gallery3.avif" type="image/avif">
+            <source srcset="img/gallery3.webp" type="image/webp">
+            <img loading="lazy" src="img/gallery3.jpg" class="image" width="530" height="530" alt="Мужская стрижка">
+          </picture>
+        </div>
+        <div class="swiper-slide swiper-gallery__slide">
+          <picture>
+            <source srcset="img/gallery4.avif" type="image/avif">
+            <source srcset="img/gallery4.webp" type="image/webp">
+            <img loading="lazy" src="img/gallery4.jpg" class="image" width="530" height="530" alt="Мужская стрижка">
+          </picture>
+        </div>
+        <div class="swiper-slide swiper-gallery__slide">
+          <picture>
+            <source srcset="img/gallery5.avif" type="image/avif">
+            <source srcset="img/gallery5.webp" type="image/webp">
+            <img loading="lazy" src="img/gallery5.jpg" class="image" width="530" height="530" alt="Мужская стрижка">
+          </picture>
+        </div>
+        <div class="swiper-slide swiper-gallery__slide">
+          <picture>
+            <source srcset="img/gallery6.avif" type="image/avif">
+            <source srcset="img/gallery6.webp" type="image/webp">
+            <img loading="lazy" src="img/gallery6.jpg" class="image" width="530" height="530" alt="Мужская стрижка">
+          </picture>
+        </div>
+        <div class="swiper-slide swiper-gallery__slide">
+          <picture>
+            <source srcset="img/gallery7.avif" type="image/avif">
+            <source srcset="img/gallery7.webp" type="image/webp">
+            <img loading="lazy" src="img/gallery7.jpg" class="image" width="530" height="530" alt="Мужская стрижка">
+          </picture>
+        </div>
+        <div class="swiper-slide swiper-gallery__slide">
+          <picture>
+            <source srcset="img/gallery8.avif" type="image/avif">
+            <source srcset="img/gallery8.webp" type="image/webp">
+            <img loading="lazy" src="img/gallery8.jpg" class="image" width="530" height="530" alt="Мужская стрижка">
+          </picture>
+        </div>
+        <div class="swiper-slide swiper-gallery__slide">
+          <picture>
+            <source srcset="img/gallery9.avif" type="image/avif">
+            <source srcset="img/gallery9.webp" type="image/webp">
+            <img loading="lazy" src="img/gallery9.jpg" class="image" width="530" height="530" alt="Мужская стрижка">
+          </picture>
+        </div>
+      </div>
+      <div class="swiper-gallery__nav-wrapper">
+        <div class="swiper-button-prev swiper-gallery__btn-prev swiper-truth__btn"></div>
+        <div class="swiper-pagination swiper-gallery__pagination"></div>
+        <div class="swiper-button-next swiper-gallery__btn-next swiper-truth__btn swiper-truth__btn--next"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="profitable">
+  <div class="container profitable__container">
+    <div class="profitable__wrapper">
+      <div class="profitable__col">
+        <h2 class="profitable__title main-title main-title--white">Стригись выгодно</h2>
+        <p class="profitable__desc main-desc main-desc--white">Специальные предложения, подарочные сертификаты, абонементы</p>
+        <div class="profitable__img-wrapper">
+          <img loading="lazy" src="img/profitable-main.png" class="image" width="423" height="423" alt="Подарочный сертификат">
+        </div>
+      </div>
+      <div class="profitable__col">
+        <div id="accordion-profitable" class="profitable__accordion sg-accordion">
+          <div class="sg-accordion__wrapper">
+            <button class="sg-accordion__header btn-reset">
+              <h3 class="sg-accordion__title">Абонемент</h3>
+              <svg class="sg-accordion__icon">
+                <use xlink:href="img/sprite.svg#arrow-sg-accordion"></use>
+              </svg>
+            </button>
+            <div class="sg-accordion__content">
+              <p class="sg-accordion__text">
+                Абонемент на определенное количество посещений, чем больше посещений, тем выгоднее цена за услугу. В наличии есть абонементы на 4, 6 и 12 посещений. Это выгоднее, чем платить каждый раз. Не забудьте им воспользоваться.
+              </p>
+            </div>
+          </div>
+          <div class="sg-accordion__wrapper sg-accordion__wrapper--open">
+            <button class="sg-accordion__header btn-reset sg-accordion__header--open">
+              <h3 class="sg-accordion__title">Подарочный сертификат</h3>
+              <svg class="sg-accordion__icon">
+                <use xlink:href="img/sprite.svg#arrow-sg-accordion"></use>
+              </svg>
+            </button>
+            <div class="sg-accordion__content">
+              <p class="sg-accordion__text">
+                Носки, дезодорант и коньяк? Барбер Поинт говорит «НЕТ» стереотипам. Подари своему мужчине радость мужского общения. Сертификат в барбершоп «Барбер Поинт» творит чудеса! Мужчина придет к нам грустным, заросшим и небритым, а уйдёт стильным ухоженным бруталом. А главное, счастливым и уверенным в себе. Сертификаты всегда в наличии, на любую сумму. Дополнить подарок можно косметикой по уходу или стайлинговыми средствами. В выборе поможем, подскажем. Сделаем Ваш подарок вместе!
+              </p>
+            </div>
+          </div>
+          <div class="sg-accordion__wrapper">
+            <button class="sg-accordion__header btn-reset">
+              <h3 class="sg-accordion__title">Отец и сын</h3>
+              <svg class="sg-accordion__icon">
+                <use xlink:href="img/sprite.svg#arrow-sg-accordion"></use>
+              </svg>
+            </button>
+            <div class="sg-accordion__content">
+              <p class="sg-accordion__text">
+                Отец и сын — 1590р. Хорошо иметь сына! А у нас ещё и выгодно. Можно подстричься одновременно и сэкономить 300р.
+              </p>
+            </div>
+          </div>
+          <div class="sg-accordion__wrapper">
+            <button class="sg-accordion__header btn-reset">
+              <h3 class="sg-accordion__title">Стрижка и борода</h3>
+              <svg class="sg-accordion__icon">
+                <use xlink:href="img/sprite.svg#arrow-sg-accordion"></use>
+              </svg>
+            </button>
+            <div class="sg-accordion__content">
+              <p class="sg-accordion__text">
+                Комплекс. Стрижка и борода 1490р. Если делать в комплексе получается выгоднее. Будь экономным и ухоженным!
+              </p>
+            </div>
+          </div>
+          <div class="sg-accordion__wrapper">
+            <button class="sg-accordion__header btn-reset">
+              <h3 class="sg-accordion__title">Студент</h3>
+              <svg class="sg-accordion__icon">
+                <use xlink:href="img/sprite.svg#arrow-sg-accordion"></use>
+              </svg>
+            </button>
+            <div class="sg-accordion__content">
+              <p class="sg-accordion__text">
+                Стрижка студента — 890р. Студент! Барбер Поинт позаботится о твоей голове по цене проездного на трамвай!
+              </p>
+            </div>
+          </div>
+          <div class="sg-accordion__wrapper">
+            <button class="sg-accordion__header btn-reset">
+              <h3 class="sg-accordion__title">1 + 1</h3>
+              <svg class="sg-accordion__icon">
+                <use xlink:href="img/sprite.svg#arrow-sg-accordion"></use>
+              </svg>
+            </button>
+            <div class="sg-accordion__content">
+              <p class="sg-accordion__text">
+                Провести время с другом и при этом ещё и сэкономить. Можно подстричься одновременно или по очереди.
+              </p>
+            </div>
+          </div>
+          <div class="sg-accordion__wrapper">
+            <button class="sg-accordion__header btn-reset">
+              <h3 class="sg-accordion__title">Реферальная система</h3>
+              <svg class="sg-accordion__icon">
+                <use xlink:href="img/sprite.svg#arrow-sg-accordion"></use>
+              </svg>
+            </button>
+            <div class="sg-accordion__content">
+              <p class="sg-accordion__text">
+                Реферальная система Посоветовал нас другу? Получите оба скидку в 20%. Мы ценим каждое ваше слово.
+              </p>
+            </div>
+          </div>
+          <div class="sg-accordion__wrapper">
+            <button class="sg-accordion__header btn-reset">
+              <h3 class="sg-accordion__title">Кешбек за стрижки</h3>
+              <svg class="sg-accordion__icon">
+                <use xlink:href="img/sprite.svg#arrow-sg-accordion"></use>
+              </svg>
+            </button>
+            <div class="sg-accordion__content">
+              <p class="sg-accordion__text">
+                Со второго посещения начисляется кэшбек. Можно его копить или сразу расплачиваться. Ты стрижешься — а платит Барбер Поинт.
+              </p>
+            </div>
+          </div>
+          <div class="sg-accordion__wrapper">
+            <button class="sg-accordion__header btn-reset">
+              <h3 class="sg-accordion__title">С днем рождения</h3>
+              <svg class="sg-accordion__icon">
+                <use xlink:href="img/sprite.svg#arrow-sg-accordion"></use>
+              </svg>
+            </button>
+            <div class="sg-accordion__content">
+              <p class="sg-accordion__text">
+                Скидка 30% в День Рождение На все услуги… Просто возьми с собой паспорт. Акция действует 3 дня до и 3 дня после Вашего Дня рождения. Этот праздник и для нас особенный.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="beside">
+  <div class="container beside__container">
+    <div class="beside__wrapper">
+      <div class="beside__col1">
+        <h2 class="beside__title main-title main-title--balck">Найди ближайший Barber point</h2>
+        <p class="beside__desc main-desc main-desc--balck">5 филиалов в Краснодаре</p>
+        <button class="beside__btn-main beside__btn-main--desktop main-btn btn-reset main-btn--color">
+          Записаться онлайн
+        </button>
+        <button class="beside__btn-whatsapp beside__btn-whatsapp--desktop main-btn btn-reset main-btn--whatsapp" aria-label="Whatsapp" data-graph-path="modal-phone">
+          <svg class="icon">
+            <use xlink:href="img/sprite.svg#whatsapp"></use>
+          </svg>
+          Написать в Whatsapp
+        </button>
+      </div>
+      <div class="beside__col2">
+        <div id="map" class="beside__map"></div>
+      </div>
+      <button class="beside__btn-main beside__btn-main--mobile main-btn btn-reset main-btn--color">
+        Записаться онлайн
+      </button>
+      <button class="beside__btn-whatsapp beside__btn-whatsapp--mobile main-btn btn-reset main-btn--whatsapp" aria-label="Whatsapp" data-graph-path="modal-phone">
+        <svg class="icon">
+          <use xlink:href="img/sprite.svg#whatsapp"></use>
+        </svg>
+        Написать в Whatsapp
+      </button>
+    </div>
+  </div>
+</section>
+
+      <div class="graph-modal modal-phone">
+  <div class="graph-modal__container modal-phone__container" role="dialog" aria-modal="true" data-graph-target="modal-phone">
+    <button class="btn-reset js-modal-close graph-modal__close modal-phone__btn-close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content modal-phone__content">
+      <div class="modal-phone__logo-wrapper">
+        <img loading="lazy" src="img/logo.svg" class="image" width="158" height="32" alt="Логотип Barber Point">
+      </div>
+      <div class="modal-phone__clock">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_252_116926)">
+            <path d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M9 4.5V9L12 10.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          <defs>
+            <clipPath id="clip0_252_116926">
+              <rect width="18" height="18" fill="white"/>
+            </clipPath>
+          </defs>
+        </svg>
+        <span>Ежедневно 10:00–22:00</span>
+      </div>
+      <div class="modal-phone__desc">Горячая линия</div>
+      <a class="modal-phone__tel main-btn main-btn--color" href="tel:+78612050845">
+        <svg class="icon">
+          <use xlink:href="img/sprite.svg#phone"></use>
+        </svg>
+        8 (861) 205-08-45
+      </a>
+      <div class="modal-phone__desc">Связаться с филиалом в Краснодаре</div>
+      <div id="accordion-modal-phone" class="modal-phone__accordion sg-accordion sg-accordion--modal">
+        <div class="sg-accordion__wrapper sg-accordion__wrapper--open">
+          <button class="sg-accordion__header btn-reset sg-accordion__header--open">
+            <h3 class="sg-accordion__title sg-accordion__title--modal">ул. Артюшкова 1.</h3>
+            <svg class="sg-accordion__icon">
+              <use xlink:href="img/sprite.svg#arrow-sg-accordion"></use>
+            </svg>
+          </button>
+          <div class="sg-accordion__content" style="max-height: 76px;">
+            <a href="https://wa.me/+79649194284" class="sg-accordion__btn main-btn btn-reset main-btn--whatsapp" aria-label="Whatsapp" data-graph-path="modal-phone">
+              <svg class="icon">
+                <use xlink:href="img/sprite.svg#whatsapp"></use>
+              </svg>
+              +7 964 919-42-84
+            </a>
+          </div>
+        </div>
+        <div class="sg-accordion__wrapper">
+          <button class="sg-accordion__header btn-reset">
+            <h3 class="sg-accordion__title sg-accordion__title--modal">ул. 40 Лет Победы 97.</h3>
+            <svg class="sg-accordion__icon">
+              <use xlink:href="img/sprite.svg#arrow-sg-accordion"></use>
+            </svg>
+          </button>
+          <div class="sg-accordion__content">
+            <a href="https://wa.me/+79649063486" class="sg-accordion__btn main-btn btn-reset main-btn--whatsapp" aria-label="Whatsapp" data-graph-path="modal-phone">
+              <svg class="icon">
+                <use xlink:href="img/sprite.svg#whatsapp"></use>
+              </svg>
+              +7 964 906-34-86
+            </a>
+          </div>
+        </div>
+        <div class="sg-accordion__wrapper">
+          <button class="sg-accordion__header btn-reset">
+            <h3 class="sg-accordion__title sg-accordion__title--modal">ул. Петра Метальникова 7.</h3>
+            <svg class="sg-accordion__icon">
+              <use xlink:href="img/sprite.svg#arrow-sg-accordion"></use>
+            </svg>
+          </button>
+          <div class="sg-accordion__content">
+            <a href="https://wa.me/+79615310897" class="sg-accordion__btn main-btn btn-reset main-btn--whatsapp" aria-label="Whatsapp" data-graph-path="modal-phone">
+              <svg class="icon">
+                <use xlink:href="img/sprite.svg#whatsapp"></use>
+              </svg>
+              +7 961 531-08-97
+            </a>
+          </div>
+        </div>
+        <div class="sg-accordion__wrapper">
+          <button class="sg-accordion__header btn-reset">
+            <h3 class="sg-accordion__title sg-accordion__title--modal">ул. Адм. Серебрякова 3к1.</h3>
+            <svg class="sg-accordion__icon">
+              <use xlink:href="img/sprite.svg#arrow-sg-accordion"></use>
+            </svg>
+          </button>
+          <div class="sg-accordion__content">
+            <a href="https://wa.me/+79384836082" class="sg-accordion__btn main-btn btn-reset main-btn--whatsapp" aria-label="Whatsapp" data-graph-path="modal-phone">
+              <svg class="icon">
+                <use xlink:href="img/sprite.svg#whatsapp"></use>
+              </svg>
+              +7 938 483-60-82
+            </a>
+          </div>
+        </div>
+        <div class="sg-accordion__wrapper">
+          <button class="sg-accordion__header btn-reset">
+            <h3 class="sg-accordion__title sg-accordion__title--modal">ул. Гидростроителей 62к2.</h3>
+            <svg class="sg-accordion__icon">
+              <use xlink:href="img/sprite.svg#arrow-sg-accordion"></use>
+            </svg>
+          </button>
+          <div class="sg-accordion__content">
+            <a href="https://wa.me/+79649032825" class="sg-accordion__btn main-btn btn-reset main-btn--whatsapp" aria-label="Whatsapp" data-graph-path="modal-phone">
+              <svg class="icon">
+                <use xlink:href="img/sprite.svg#whatsapp"></use>
+              </svg>
+              +7 964 903-28-25
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="yc-btn">
+  <div class="yc-btn__wrapper">
+    <button class="yc-btn__btn btn-reset" aria-label="Онлайн запись"></button>
+  </div>
+</div>
+
+    </main>
+
+    <footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__wrapper">
+      <div class="footer__col">
+        <a class="footer__logo-wrapper">
+          <img loading="lazy" src="img/logo.svg" class="image" width="158" height="32" alt="Логотип Barber Point">
+        </a>
+        <div class="footer__clock">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_259_1522)">
+              <path d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M9 4.5V9L12 10.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_259_1522">
+                <rect width="18" height="18" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+          <span>Ежедневно 10:00–22:00</span>
+        </div>
+      </div>
+      <div class="footer__col">
+        <div class="footer__city">г. Краснодар</div>
+        <ul class="footer__city-list list-reset">
+          <li class="footer__city-item">ул. Артюшкова 1.</li>
+          <li class="footer__city-item">ул. 40 Лет Победы 97.</li>
+          <li class="footer__city-item">ул. Петра Метальникова 7.</li>
+          <li class="footer__city-item">ул. Адм. Серебрякова 3к1.</li>
+          <li class="footer__city-item">ул. Гидростроителей 62к2.</li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <a href="#" class="footer__link eff-line">Статьи и новости</a>
+        <a href="#" class="footer__link eff-line">Школа барберов</a>
+      </div>
+      <div class="footer__col">
+        <ul class="footer__social-list social-networks list-reset">
+          <li class="social-networks__item">
+            <a href="vk.com" class="social-networks__link social-networks__link--vk">
+              <svg class="icon">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-networks__item">
+            <a href="telegram.com" class="social-networks__link social-networks__link--telegram">
+              <svg class="icon">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-networks__item">
+            <button href="whatsapp.com" class=" btn-reset social-networks__link social-networks__link--whatsapp" aria-label="Whatsapp" data-graph-path="modal-phone">
+              <svg class="icon">
+                <use xlink:href="img/sprite.svg#whatsapp"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="social-networks__item">
+            <a href="youtube.com" class="social-networks__link social-networks__link--youtube">
+              <svg class="icon">
+                <use xlink:href="img/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </div>
+</body>
+
+</html>
